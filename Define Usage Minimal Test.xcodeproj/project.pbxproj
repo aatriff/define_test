@@ -25,6 +25,8 @@
 /* Begin PBXFileReference section */
 		5EB71AAD27BF965E009D975E /* Define Usage Minimal Test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Define Usage Minimal Test"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EB71AB027BF965E009D975E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		5EB71AB727BF9679009D975E /* Bridging_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridging_Header.h; sourceTree = "<group>"; };
+		5EB71AB827BF969E009D975E /* defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = defines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,8 @@
 			isa = PBXGroup;
 			children = (
 				5EB71AB027BF965E009D975E /* main.swift */,
+				5EB71AB827BF969E009D975E /* defines.h */,
+				5EB71AB727BF9679009D975E /* Bridging_Header.h */,
 			);
 			path = "Define Usage Minimal Test";
 			sourceTree = "<group>";
@@ -247,6 +251,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Define Usage Minimal Test/Bridging_Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -256,6 +261,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Define Usage Minimal Test/Bridging_Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
